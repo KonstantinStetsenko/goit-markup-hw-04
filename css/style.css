@@ -169,10 +169,10 @@ body {
 
 /* Секция 1 */
 .container-head {
+  max-width: 1440px;
   display: block;
 }
 .head-section {
-  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
   background-color: #2e2f42;
