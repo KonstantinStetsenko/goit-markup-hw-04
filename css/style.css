@@ -90,6 +90,24 @@ body {
   color: #2e2f42;
   padding: 24px 0 24px;
 }
+.menu-li:hover {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+  padding: 24px 0 24px;
+}
+.menu-li:active {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+  padding: 24px 0 24px;
+}
 
 .menu-li:hover {
   color: #404bbf;
@@ -98,8 +116,21 @@ body {
 .menu-li-1:focus {
   color: #404bbf;
 }
-.menu-li:focus {
+
+.current {
+  position: relative;
   color: #404bbf;
+}
+.menu-header .current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #404bbf;
 }
 /* оформление списка контактов */
 .contact-adress {
@@ -141,6 +172,17 @@ body {
   padding-bottom: 188px;
   background-color: #2e2f42;
   align-items: center;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.4),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("/images/04/hero\ image.jpg");
+  background-color: linear-gradient(rgba(46, 47, 66, 0.7));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .sec-hed-content {
   display: block;
@@ -191,6 +233,11 @@ body {
 }
 .button-sec:hover {
   background-color: #404bbf;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+  transition-delay: 250ms;
 }
 .button-sec:focus {
   font-family: "Roboto", sans-serif;
@@ -205,8 +252,13 @@ body {
   margin-bottom: 0;
   background-color: #404bbf;
   border: 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+  transition-delay: 250ms;
 }
-/* Секция 2 о нас*/
+/* ------------------------------Секция 2 о нас--------------------------*/
 
 .obout-us {
   margin-bottom: 8px;
@@ -255,7 +307,26 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-/* Секция 3 Наша команда*/
+/* настройка иконки */
+.icon-obout-section {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  margin-bottom: 8px;
+}
+.icon-obout {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  /* Дополнительные стили по вашему усмотрению */
+  padding: 0;
+}
+
+/* -------------Секция 3 Наша команда---------------*/
 
 .command-list-item {
   display: block;
@@ -264,6 +335,9 @@ body {
   padding-left: 0;
   margin: 0;
   gap: 24px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: white;
 }
 .image-our-tem {
   display: block;
@@ -316,7 +390,65 @@ body {
 .command-li {
   background-color: #ffffff;
 }
-
+/* Стили иконок */
+.social-links {
+  padding: 12px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+/* Стили иконок */
+.social-links:hover {
+  padding: 12px;
+  background-color: #404bbf;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+  transition-delay: 250ms;
+}
+.icon-social {
+  fill: white;
+}
+.command-icon {
+  margin-top: 8px;
+}
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+  background-color: #4d5ae5;
+  justify-content: center;
+}
+.text-overlay {
+  width: 296px;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: white;
+}
+.conteiner-img {
+  position: relative;
+  overflow: hidden;
+}
+.conteiner-item:hover .overlay {
+  transform: translateY(0);
+}
 /* Секция 4 */
 .our-portfolio {
   width: 1440px;
@@ -352,9 +484,15 @@ body {
 }
 .portfolio-item {
   width: calc((100% - 48px) / 3);
-
   margin: 0;
   padding: 0;
+}
+.portfolio-item:hover {
+  width: calc((100% - 48px) / 3);
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .our-porfolio-conteiner {
   padding: 32px 16px;
@@ -378,6 +516,7 @@ body {
 }
 /* Футер */
 .footer {
+  display: flex;
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -414,6 +553,73 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+.container-footer {
+  display: flex;
+}
+.conteiner-contacts {
+  margin-right: 120px;
+}
+
+.footer-links-icon {
+  display: flex;
+  /* padding: 8px; */
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-links-icon:hover {
+  display: flex;
+  /* padding: 8px; */
+  background-color: #31d0aa;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+  transition-delay: 250ms;
+}
+.icon-footer {
+  /* display: flex; */
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  fill: white;
+}
+.footer-icon {
+  display: block;
+}
+.group-icon {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-h {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: white;
+  margin-bottom: 16px;
+}
+
+/* настройка иконок социальных сетей */
+
+.command-icon {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 /* 1)нстроить отступы текста в футере 
