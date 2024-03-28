@@ -427,9 +427,10 @@ body {
 .icon-social {
   fill: white;
 }
-.command-icon {
+.command-icon-ul {
   display: flex;
   margin-top: 8px;
+  gap: 24px;
 }
 .overlay {
   display: flex;
