@@ -383,7 +383,7 @@ body {
 .command-name {
   margin-left: auto;
   margin-right: auto;
-  padding: 32px 0 32px;
+  padding: 32px 0 0px;
   border-radius: 0px 0px 4px 4px;
 }
 .command-list-p {
@@ -426,6 +426,10 @@ body {
 }
 .icon-social {
   fill: white;
+}
+.command-icon {
+  padding-top: 8px;
+  padding-bottom: 32px;
 }
 .command-icon-ul {
   display: flex;
