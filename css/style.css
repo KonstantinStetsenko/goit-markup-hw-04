@@ -427,14 +427,17 @@ body {
 .icon-social {
   fill: white;
 }
-.command-icon {
+/* .command-icon {
   padding-top: 8px;
   padding-bottom: 32px;
-}
+} */
 .command-icon-ul {
   display: flex;
   margin-top: 8px;
   gap: 24px;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 32px;
 }
 .overlay {
   display: flex;
