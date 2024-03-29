@@ -607,7 +607,7 @@ body {
   height: 40px;
 }
 
-.footer-links-icon:hover {
+.footer-links-icon:hover:focus {
   display: flex;
   /* padding: 8px; */
   background-color: #31d0aa;
