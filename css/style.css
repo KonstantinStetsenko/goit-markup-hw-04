@@ -638,6 +638,7 @@ body {
   transition-timing-function: linear;
   transition-delay: 250ms;
 } */
+}
 .icon-footer {
   /* display: flex; */
   gap: 24px;
