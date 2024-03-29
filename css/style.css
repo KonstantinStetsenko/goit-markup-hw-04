@@ -175,7 +175,7 @@ body {
 .head-section {
   padding-top: 188px;
   padding-bottom: 188px;
-  background-color: #2e2f42;
+  /* background-color: #2e2f42; */
   align-items: center;
 
   background-image: linear-gradient(
@@ -184,8 +184,8 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url("/images/img-name.jpg");
-  background-color: linear-gradient(rgba(46, 47, 66, 0.7));
-  background-repeat: no-repeat;
+  /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+  background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
 }
