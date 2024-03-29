@@ -401,7 +401,7 @@ body {
 }
 /* Стили иконок */
 .social-links {
-  display: block;
+  display: flex;
   padding: 12px;
   background-color: #4d5ae5;
   border-radius: 50%;
@@ -426,8 +426,11 @@ body {
   transition-timing-function: linear;
   transition-delay: 250ms;
 }
+.social-links:focus {
+  background-color: #404bbf;
+}
 .icon-social {
-  fill: white;
+  fill: #f4f4fd;
 }
 /* .command-icon {
   padding-top: 8px;
