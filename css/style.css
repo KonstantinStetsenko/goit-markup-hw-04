@@ -613,7 +613,6 @@ body {
   display: flex;
   /* padding: 8px; */
   background-color: #31d0aa;
-
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -627,9 +626,7 @@ body {
 }
 .footer-links-icon:focus {
   display: flex;
-
   background-color: #31d0aa;
-
   border-radius: 50%;
   justify-content: center;
   align-items: center;
