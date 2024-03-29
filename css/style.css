@@ -33,6 +33,7 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 1440px;
 }
 /* Хедер */
 .container-header {
