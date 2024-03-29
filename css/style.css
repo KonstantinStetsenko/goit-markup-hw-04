@@ -607,7 +607,23 @@ body {
   height: 40px;
 }
 
-.footer-links-icon:hover:focus {
+.footer-links-icon:hover {
+  display: flex;
+  /* padding: 8px; */
+  background-color: #31d0aa;
+
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: linear;
+  transition-delay: 250ms;
+}
+.footer-links-icon:focus {
   display: flex;
   /* padding: 8px; */
   background-color: #31d0aa;
