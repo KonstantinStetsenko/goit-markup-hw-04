@@ -596,7 +596,7 @@ body {
   margin-right: 120px;
 }
 
-.footer-links-icon {
+.footer-li .footer-links-icon {
   display: flex;
   /* padding: 8px; */
   background-color: #4d5ae5;
@@ -661,8 +661,6 @@ body {
   letter-spacing: 0.02em;
   color: white;
   margin-bottom: 16px;
-}
-.footer-li {
 }
 
 /* настройка иконок социальных сетей */
