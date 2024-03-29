@@ -441,6 +441,7 @@ body {
   padding-top: 8px;
   padding-bottom: 32px;
 }
+/* Секция 4 */
 .overlay {
   display: flex;
   position: absolute;
@@ -469,7 +470,7 @@ body {
 .conteiner-item:hover .overlay {
   transform: translateY(0);
 }
-/* Секция 4 */
+
 .our-portfolio {
   width: 1440px;
 }
