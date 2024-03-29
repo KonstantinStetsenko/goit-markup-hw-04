@@ -467,6 +467,7 @@ body {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+
   padding: 40px 32px;
   background-color: #4d5ae5;
   transform: translateY(100%);
@@ -556,6 +557,7 @@ body {
 }
 .container-footer {
   padding-left: 156px;
+  align-items: baseline;
 }
 .footer-p {
   font-weight: 400;
@@ -636,7 +638,7 @@ body {
   gap: 16px;
 }
 
-.footer-h {
+.footer-pp {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
